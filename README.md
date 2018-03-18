@@ -2,7 +2,7 @@
 React component for rendering SVG QR codes with SAFE Network design
 
 ## Demo
-Basic demo can be found at the [demo page](https://bochaco.github.io/safe-qrcode-svg/).
+Basic demo can be found at the [demo page](https://bochaco.github.io/safe-qrcode-svg/#/demo).
 
 ## Why SVG?
 Most of the existing React components for QR (namely [`qrcode.react`](https://github.com/zpao/qrcode.react), which was used as a starting point for this project) use `<canvas>` for rendering.
@@ -29,6 +29,7 @@ class Demo extends React.Component {
         return (<SAFEQRCode
                     bgColor="#FFFFFF"
                     fgColor="#5b91cc"
+                    logoColor = '#5b91cc'
                     level="Q"
                     style={{ width: 256 }}
                     value="some text"
@@ -45,6 +46,7 @@ The props available are (shown with default values):
     level: 'L', // QR Error correction level
     bgColor: '#FFFFFF', // Color of the bright squares
     fgColor: '#5b91cc', // Color of the dark squares
+    logoColor = '#5b91cc', // Color of the SAFE Network logo
 }
 ```
 
@@ -53,7 +55,7 @@ The `level` prop corresponds to [Error correction level](https://en.wikipedia.or
 You can also specify all the props that are valid for the `<svg>` React element (e.g. `style`, `className` or `width` which you can use to specify the size of the QR code).
 
 ## Acknowledgements
-This project is a modified version of [react-qr-svg](https://github.com/no23reason/react-qr-svg) which in turn is heavily inspired by the [`qrcode.react`](https://github.com/zpao/qrcode.react) project.
+This project is a modified version of [`react-qr-svg`](https://github.com/no23reason/react-qr-svg) which in turn is heavily inspired by the [`qrcode.react`](https://github.com/zpao/qrcode.react) project.
 
 This project uses the [`react-component-boilerplate`](https://github.com/survivejs/react-component-boilerplate).
 

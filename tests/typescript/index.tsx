@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { QRCode } from 'react-qr-svg';
+import { SAFEQRCode } from 'safe-qrcode-svg';
 
 interface IDemoProps {
     text: string;
@@ -8,9 +8,9 @@ interface IDemoProps {
 class Demo extends React.Component<IDemoProps> {
     render(): JSX.Element {
         return <div>
-            <QRCode bgColor="#FFFFFF" fgColor="#000000" level="M" value={this.props.text} />
-            <QRCode value="Only value here" />
-            <QRCode value="Style here" style={{ width: 250 }} />
+            <SAFEQRCode bgColor="#FFFFFF" fgColor="#000000" level="M" value={this.props.text} />
+            <SAFEQRCode value="Only value here" />
+            <SAFEQRCode value="Style here" style={{ width: 250 }} />
         </div>;
     }
 }

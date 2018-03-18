@@ -1,8 +1,8 @@
 {
-  "name": "react-qr-svg-typescript-test",
-  "description": "Typings tests for react-qr-svg",
-  "author": "Dan Homola",
-  "user": "no23reason",
+  "name": "safe-qrcode-svg-typescript-test",
+  "description": "Typings tests for safe-qrcode-svg",
+  "author": "Gabriel Viganotti",
+  "user": "bochaco",
   "version": "0.0.0-semantic-release",
   "scripts": {
     "start": "node ./scripts/createTypings.js rimraf out && tsc && rimraf out && rimraf ./index.d.ts"

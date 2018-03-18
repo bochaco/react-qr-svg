@@ -31,7 +31,7 @@ ReactDOM.render(
       bannerColor="#fff"
       direction="right"
       height={80}
-      href="https://github.com/no23reason/react-qr-svg"
+      href="https://github.com/bochaco/safe-qrcode-svg"
       octoColor="#000"
       width={80}
     />
@@ -43,7 +43,7 @@ ReactDOM.render(
         js: props => <CodeSpecimen {...props} lang="javascript" />,
         jsx: props => <ReactSpecimen {...props} />,
       }}
-      title="react-qr-svg"
+      title="safe-qrcode-svg"
     />
   </div>,
   document.getElementById('catalog'),
