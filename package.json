@@ -1,9 +1,9 @@
 {
-  "name": "react-qr-svg",
-  "description": "React.js component for SVG QR codes",
-  "author": "Dan Homola",
-  "user": "no23reason",
-  "version": "0.0.0-semantic-release",
+  "name": "safe-qrcode-svg",
+  "description": "React component for rendering SVG QR codes with SAFE Network design",
+  "author": "Gabriel Viganotti",
+  "user": "bochaco",
+  "version": "0.0.1",
   "scripts": {
     "dist": "rimraf ./dist-modules && babel ./src --out-dir ./dist-modules",
     "gh-pages": "npm run gh-pages:build && npm run gh-pages:deploy",
@@ -57,11 +57,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/no23reason/react-qr-svg.git"
+    "url": "https://github.com/bochaco/safe-qrcode-svg.git"
   },
-  "homepage": "https://no23reason.github.io/react-qr-svg/",
+  "homepage": "https://github.com/bochaco/safe-qrcode-svg.git",
   "bugs": {
-    "url": "https://github.com/no23reason/react-qr-svg/issues"
+    "url": "https://github.com/bochaco/safe-qrcode-svg/issues"
   },
   "keywords": [
     "react",

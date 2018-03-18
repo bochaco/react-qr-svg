@@ -1,5 +1,5 @@
 import React from 'react';
-import { QRCode } from '../src/index';
+import { SAFEQRCode } from '../src/index';
 
 class Demo extends React.Component {
   constructor(props, context) {
@@ -8,7 +8,7 @@ class Demo extends React.Component {
       value: 'Try changing the values and see the code update in real-time!',
       level: 'L',
       bgColor: '#FFFFFF',
-      fgColor: '#000000',
+      fgColor: '#5b91cc',
     };
   }
 
@@ -73,7 +73,7 @@ class Demo extends React.Component {
           </fieldset>
         </form>
         <div className="qrcode">
-          <QRCode
+          <SAFEQRCode
             bgColor={state.bgColor}
             fgColor={state.fgColor}
             level={state.level}

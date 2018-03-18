@@ -1,6 +1,12 @@
 MIT License
 
-Copyright (c) 2017 Dan Homola
+Original work Copyright (c) 2017 Dan Homola.
+
+Copyright for modifications to customise the generated SVG QR code
+to display SAFE Network logo and design are held by Gabriel Viganotti, 2018, under MIT License.
+
+Copyright for the SAFE Network logo SVG utilised is held
+by MaidSafe.net Ltd, 2016, under the Creative Commons Attribution-ShareAlike 4.0 International license (CC).
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
