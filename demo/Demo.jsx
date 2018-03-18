@@ -52,7 +52,7 @@ class Demo extends React.Component {
                   <option value="L">L</option>
                   <option value="M">M</option>
                   <option value="Q">Q</option>
-                  <option selected value="H">H</option>
+                  <option defaultValue value="H">H</option>
                 </select>
               </div>
               <div className="pure-u-1-3">

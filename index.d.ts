@@ -17,6 +17,10 @@ interface QRCodeProps {
      * Color of the dark squares
      */
     fgColor?: string;
+    /**
+     * Color of the SAFE Network logo
+     */
+    logoColor?: string;
 }
 
 /**
