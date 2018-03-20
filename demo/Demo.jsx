@@ -10,11 +10,13 @@ class Demo extends React.Component {
       bgColor: '#FFFFFF',
       fgColor: '#5b91cc',
       logoColor: '#5b91cc',
+      connsDensity: 'N',
     };
   }
 
   updateValue = e => this.setState({ ...this.state, value: e.target.value });
   updateLevel = e => this.setState({ ...this.state, level: e.target.value });
+  updateConnsDensity = e => this.setState({ ...this.state, connsDensity: e.target.value });
   updateBgColor = e =>
     this.setState({ ...this.state, bgColor: e.target.value });
   updateFgColor = e =>
@@ -30,6 +32,7 @@ class Demo extends React.Component {
       updateBgColor,
       updateFgColor,
       updateLogoColor,
+      updateConnsDensity,
     } = this;
     return (
       <div>
@@ -82,6 +85,15 @@ class Demo extends React.Component {
                   value={state.logoColor}
                 />
               </div>
+              <div className="pure-u-1-3">
+                <label htmlFor="connsDensity">Dots connection density: </label>
+                <select id="connsDensity" onChange={updateConnsDensity}>
+                  <option defaultValue value="N">None</option>
+                  <option value="L">Low</option>
+                  <option value="M">Medium</option>
+                  <option value="H">High</option>
+                </select>
+              </div>
             </div>
           </fieldset>
         </form>
@@ -91,6 +103,7 @@ class Demo extends React.Component {
             bgColor={state.bgColor}
             fgColor={state.fgColor}
             logoColor={state.logoColor}
+            connsDensity={state.connsDensity}
             level={state.level}
             style={{ width: 400 }}
             value={state.value}
