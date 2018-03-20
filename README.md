@@ -34,6 +34,7 @@ class Demo extends React.Component {
                     connsDensity="H"
                     style={{ width: 256 }}
                     value="some text"
+                    asImg={true}
                 />);
     }
 }
@@ -49,6 +50,7 @@ The props available are (shown with default values):
     fgColor: '#5b91cc', // Color of the dark squares
     logoColor: '#5b91cc', // Color of the SAFE Network logo
     connsDensity: 'N', // Density of connectors between dots
+    asImg: false, // Render the QR code as an <img> element instead of <svg>
 }
 ```
 

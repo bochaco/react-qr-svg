@@ -51,11 +51,11 @@ class Demo extends React.Component {
               </div>
               <div className="pure-u-1-3">
                 <label htmlFor="level">Error Correction level: </label>
-                <select id="level" onChange={updateLevel}>
+                <select id="level" defaultValue="H" onChange={updateLevel}>
                   <option value="L">L</option>
                   <option value="M">M</option>
                   <option value="Q">Q</option>
-                  <option defaultValue value="H">H</option>
+                  <option value="H">H</option>
                 </select>
               </div>
               <div className="pure-u-1-3">
@@ -87,8 +87,8 @@ class Demo extends React.Component {
               </div>
               <div className="pure-u-1-3">
                 <label htmlFor="connsDensity">Dots connection density: </label>
-                <select id="connsDensity" onChange={updateConnsDensity}>
-                  <option defaultValue value="N">None</option>
+                <select id="connsDensity" defaultValue="H" onChange={updateConnsDensity}>
+                  <option value="N">None</option>
                   <option value="L">Low</option>
                   <option value="M">Medium</option>
                   <option value="H">High</option>
@@ -107,6 +107,7 @@ class Demo extends React.Component {
             level={state.level}
             style={{ width: 400 }}
             value={state.value}
+            asImg={true}
           />
         </div>
       </div>

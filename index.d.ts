@@ -21,6 +21,14 @@ interface QRCodeProps {
      * Color of the SAFE Network logo
      */
     logoColor?: string;
+    /**
+     * Density level for connections between dots
+     */
+    connsDensity?: "N" | "L" | "M" | "H";
+    /**
+     * Render the QR code as an <img> element instead of <svg>
+     */
+    asImg?: false;
 }
 
 /**
