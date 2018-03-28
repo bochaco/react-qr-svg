@@ -2,8 +2,9 @@
 React component for rendering SVG QR codes with SAFE Network design
 
 ## Demo
-Basic demo can be found at the [demo page](https://bochaco.github.io/safe-qrcode-svg).
+Basic demo can be found at the [demo page](https://bochaco.github.io/safe-qrcode-svg):
 
+<a href="https://bochaco.github.io/safe-qrcode-svg"><img src="demo/demo-url-qr.svg" align="left" height="400" width="400" ></a><br/><br/><br/>
 ## Why SVG?
 Most of the existing React components for QR (namely [`qrcode.react`](https://github.com/zpao/qrcode.react), which was used as a starting point for this project) use `<canvas>` for rendering.
 
